@@ -198,7 +198,7 @@ void loop() {
         current = false;
     }
     sprintf(message, "{\"Button State\" : \"%d\"}", current); // %d is used for a bool as well
-    mqtt.publish("Leana/switch", message);
+    mqtt.publish("Leana/button", message);
     timerThree = millis();
     last = current;
   }
